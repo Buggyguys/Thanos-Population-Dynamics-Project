@@ -2,7 +2,7 @@
 ## Required Packages:
 ```bash
 pip install sympy
-pip install numpy
+Apip install numpy
 pip install matplotlib
 pip install pandas
 ```
@@ -33,8 +33,12 @@ These assumptions overlook the potential for sustainable solutions to balance po
 $$
 \frac{dP}{dt} = kP, \quad P(0) = P_0
 $$
+> [!NOTE]  
+> - $P$ is the population at time $t$,
+> - $k$ represents thr rate of population growth (constant because we assume infinite growth)
+> - $P_0$ initial population (constant)
 
-where $P$ is the population at time $t$, and $k$ and $P_0$ are constant parameters.
+
 
 #### (i) Interpret the meaning of this differential equation.
 This differential equation describes exponential growth of a population $P$ over time. The term $kP$ indicates that the rate of change of the population (how fast the population is growing) is proportional to the current population size $P$. The constant $k$ represents the growth rate: if $k > 0$, the population increases over time, while if $k < 0$, the population decreases.
@@ -95,17 +99,17 @@ $$
 \frac{dP}{dt} = kP \left( 1 - \frac{P}{L} \right), \quad P(0) = P_0
 $$
 
-Where:
-- $P$ is the population at time $t$,
-- $k$ is the intrinsic growth rate,
-- $L$ is the carrying capacity (the maximum sustainable population size),
-- $P_0$ is the initial population size.
+> [!NOTE]  
+> - $P$ is the population at time $t$,
+> - $k$ is the intrinsic growth rate,
+> - $L$ is the carrying capacity (the maximum sustainable population size),
+> - $P_0$ is the initial population size.
 
 ### (i) How does each parameter affect the growth of the population?
 
 - **$k$ (growth rate)**: This parameter controls how fast the population grows. If $k > 0$, the population increases; if $k < 0$, the population decreases (though the problem specifies $k$ is positive).
   
-- **$L$ (carrying capacity)**: This represents the maximum population the environment can support. As the population $P$ approaches $L$, the growth rate slows down, eventually reaching zero when $P = L$.
+- **$L$ (carrying capacity)**: This represents the maximum population the environment can support. As the population $P$ goes over $L$, the growth rate exponentially decreases until the population at least reaches the equillibrium $P = L$, after wich it starts increasing.
   
 - **$P_0$ (initial population)**: This is the population size at time $t = 0$. It determines the starting point of the population growth. If $P_0$ is smaller than $L$, the population will grow towards $L$; if $P_0 > L$, the population will decrease towards $L$.
 
@@ -214,10 +218,10 @@ $$
 \frac{dP}{dt} = kP, \quad P(0) = P_0
 $$
 
-Where:
-- $P(t)$ is the population at time $t$,
-- $k$ is the intrinsic growth rate (a constant),
-- $P_0$ is the initial population size.
+> [!NOTE]  
+> - $P(t)$ is the population at time $t$,
+> - $k$ is the intrinsic growth rate (a constant),
+> - $P_0$ is the initial population size.
 
 ##### Assumptions:
 1. **Unlimited Resources**: This model assumes that the population can grow indefinitely without any constraints. Resources such as food, space, and other essentials are assumed to be infinitely available.
@@ -243,11 +247,11 @@ $$
 \frac{dP}{dt} = kP \left( 1 - \frac{P}{L} \right), \quad P(0) = P_0
 $$
 
-Where:
-- $P(t)$ is the population at time $t$,
-- $k$ is the intrinsic growth rate,
-- $L$ is the carrying capacity (the maximum population size that the environment can support),
-- $P_0$ is the initial population size.
+> [!NOTE]  
+> - $P(t)$ is the population at time $t$,
+> - $k$ is the intrinsic growth rate,
+> - $L$ is the carrying capacity (the maximum population size that the environment can support),
+> - $P_0$ is the initial population size.
 
 ##### Assumptions:
 1. **Limited Resources**: This model assumes that resources are finite, and as the population approaches the carrying capacity $L$, the growth rate slows down.
@@ -285,3 +289,6 @@ This model is much more realistic in describing long-term population dynamics. I
 In conclusion, **Model 2**, the constrained growth model, is far more reasonable for modeling real-world population dynamics because it accounts for finite resources and the natural limitations imposed by the environment. While **Model 1** may describe short-term growth patterns, it fails to capture the eventual stabilization that occurs in real ecosystems.
 
 The constrained growth model shows that, even if populations are reduced, they will eventually grow back to the carrying capacity unless there are long-term restrictions on resources. This highlights the importance of addressing the root causes of overpopulation and resource depletion rather than temporary reductions in population size.
+
+
+
