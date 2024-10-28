@@ -284,6 +284,14 @@ This model is much more realistic in describing long-term population dynamics. I
    - **Model 1** might be useful for very short-term projections where growth is unconstrained, such as in early-stage bacterial growth or initial colonization of a new habitat.
    - **Model 2** is better suited for long-term population predictions, as it accounts for limited resources and environmental constraints.
 
+#### Population Dynamics Diagram
+<div align="center">
+This diagram illustrates the unconstrained and constrained growth models discussed in the project.
+
+![Population Dynamics Diagram](Images/Diagram.png)
+
+</div>
+
 #### Conclusion
 
 In conclusion, **Model 2**, the constrained growth model, is far more reasonable for modeling real-world population dynamics because it accounts for finite resources and the natural limitations imposed by the environment. While **Model 1** may describe short-term growth patterns, it fails to capture the eventual stabilization that occurs in real ecosystems.
