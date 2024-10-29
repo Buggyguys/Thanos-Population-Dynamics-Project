@@ -35,7 +35,7 @@ $$
 $$
 > [!NOTE]  
 > - $P$ is the population at time $t$,
-> - $k$ represents thr rate of population growth (constant because we assume infinite growth)
+> - $k$ represents the rate of population growth (constant because we assume infinite growth)
 > - $P_0$ initial population (constant)
 
 
